@@ -1,0 +1,81 @@
+/*CSS document*/
+:root{
+    padding: 0;
+}
+*{
+    text-align: center;
+    text-decoration: none;
+}
+body{
+    background-color: #0F1442;
+    color: white;
+    padding: 5px;
+}
+div{
+    margin: 3px;
+}
+p{
+    font-size: 1.2rem;
+    margin-top: 3.2rem;
+    font-family: initial;
+}
+#perfil{
+    margin: 0 auto 3rem auto;
+}
+#perfil-image{
+    width:8rem;
+    border-radius: 50%;
+    transition: .2s;
+}
+#perfil-image:hover{
+    transform: scale(1.1);
+}
+#name{
+    margin: 0;
+    font-size: 2rem;
+    transition: .2s;
+    color: white;
+}
+#name:hover{
+    opacity: .8;
+}
+span{
+    opacity: .5;
+    color: white;
+    transition: .2s;
+}
+span:hover{
+    opacity: .8;
+}
+#sobre-mim{
+    margin: 5px;
+}
+#grid-container{
+    display: grid;
+    grid-gap: 60px 20px;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(3,6rem);
+    justify-content: center;
+}
+.grid-item{
+    border-radius: 30px;
+    background-color:#2D2B7B;
+    cursor: pointer;
+    transition: .5s;
+}
+.grid-item:hover{
+    background-color: #5464F8;
+    transform: scale(1.1);
+}
+i{
+    font-size: 4rem;
+    margin: 15px;
+    color: white;
+    transition: .5s;
+}
+@media (min-width: 600px) {
+  #grid-container{
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: repeat(2,6rem);
+  }
+}
